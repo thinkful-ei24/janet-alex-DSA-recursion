@@ -12,3 +12,15 @@ Output:
 2 - Another sheep jump over the fence
 1 - Another sheep jump over the fence
 */
+
+function countingSheep (numOfSheep){
+    if (numOfSheep<1){
+        return;
+    }
+
+    console.log(`${numOfSheep} - Another sheep jump over the fence `);
+
+    countingSheep(--numOfSheep);
+}
+
+countingSheep(3);
