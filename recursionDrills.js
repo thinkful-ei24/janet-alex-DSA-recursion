@@ -69,30 +69,35 @@ Output: [2, 4, 6]*/
 
 // console.log(triangular(5));
 
+// function splitter(str, separator, currentword = '', results = []) {
+//   if (str.length < 1) {
+//     //if the current word is not empty, add to the results
+//     return currentword ? [...results, currentword] : results;
+//   }
 
-function splitter (str, separator, currentword='', results=[]){
+//   if (str[0] !== separator) {
+//     //if 1st character is not the separator
+//     //add the first character to currentWord
+//     //run splitter on the rest of the string
+//     return splitter(str.slice(1), separator, currentword + str[0], results);
+//   } else {
+//     //if the 1st character is the separator
+//     // add current word to the results
+//     // reset the current word back to ''
+//     //call splitter on the rest of the string
+//     return splitter(str.slice(1), separator, '', [...results, currentword]);
+//   }
+// }
 
-    if (str.length <1 ){
-        //if the current word is not empty, add to the results
-        return currentword ? [...results, currentword] : results; 
-    }
+// // console.log(splitter('hello there bob', ' '));
 
-    if (str[0] !==separator){ //if 1st character is not the separator
-        //add the first character to currentWord
-        //run splitter on the rest of the string
-        return splitter(str.slice(1), separator, currentword+str[0], results)
-     
-    }else {
-        //if the 1st character is the separator
-        // add current word to the results
-        // reset the current word back to '' 
-        //call splitter on the rest of the string
-       return  splitter(str.slice(1), separator, '', [...results, currentword])
+// // ['hello','there']
 
-    }
-  
-}
+// function factorial(n) {
+//   if (n === 1) {
+//     return 1;
+//   }
 
-console.log(splitter('hello there bob', ' '));
-
-// ['hello','there']
+//   return n * factorial(n - 1);
+// }
+// console.log(factorial(5));
