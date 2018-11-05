@@ -13,14 +13,31 @@ Output:
 1 - Another sheep jump over the fence
 */
 
-function countingSheep (numOfSheep){
-    if (numOfSheep<1){
-        return;
-    }
+// function countingSheep (numOfSheep){
+//     if (numOfSheep<1){
+//         return;
+//     }
 
-    console.log(`${numOfSheep} - Another sheep jump over the fence `);
+//     console.log(`${numOfSheep} - Another sheep jump over the fence `);
 
-    countingSheep(--numOfSheep);
-}
+//     countingSheep(--numOfSheep);
+// }
 
-countingSheep(3);
+// countingSheep(3);
+
+/*Array Double
+Write a function that takes an array as input which contains an 
+unknown set of numbers, and outputs an array with each input value doubled. 
+Test your solution by trying a handful of different arrays. For example,
+
+Input: [1, 2, 3]
+Output: [2, 4, 6]*/
+
+// function double (arr){
+//     if (arr.length < 1){
+//         return [];
+//     }
+//    return  [arr[0]*2, ...double(arr.slice(1))];
+// }
+
+// console.log(double([1, 2, 3]));
