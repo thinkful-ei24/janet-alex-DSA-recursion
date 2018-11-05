@@ -101,3 +101,24 @@ Output: [2, 4, 6]*/
 //   return n * factorial(n - 1);
 // }
 // console.log(factorial(5));
+
+
+function fibonacci (num, numlist=[1,1] ){
+    if (num===0){
+        return numlist= [];
+    }
+    if (num===1){
+        return numlist= [1]
+    }
+    if (num==2){
+        return numlist= [...numlist]
+    }
+
+ 
+    //use number as a counter
+    const newdigit = numlist[numlist.length-1] + numlist[numlist.length-2];
+    return fibonacci(num-1, [...numlist, newdigit]);
+
+}
+
+console.log(fibonacci(7));
