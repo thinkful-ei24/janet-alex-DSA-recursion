@@ -41,3 +41,30 @@ Output: [2, 4, 6]*/
 // }
 
 // console.log(double([1, 2, 3]));
+
+// function reverseStr(str) {
+//   if (str === '') {
+//     return '';
+//   }
+//   const reverseChar = str.charAt(str.length - 1);
+//   return reverseChar + reverseStr(str.slice(0, -1));
+
+//   // + reverseStr(str.slice(1));
+// }
+
+// console.log(reverseStr('hello'));
+
+// function triangular(n) {
+//   if (n === 1) {
+//     return 1;
+//   }
+//   // 1 + 2 = 3
+//   // 3 + 3 = 6
+//   // 6 + 4 = 10
+//   // a + b = c
+//   // c +(b+1) = x
+//   // const sum = 1 + (n - 1);
+//   return triangular(n - 1) + n;
+// }
+
+// console.log(triangular(5));
